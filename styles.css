@@ -3,84 +3,24 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: sans-serif;
+}
+
+h1 {
+    font-size: calc((100vw - 360px)/(1920 - 360) * (50 - 25 ) + 25px);
+}
+
+p {
     font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    min-width: 320px;
 }
 
-section {
-    min-height: 100vh;
-    background-color: #ffe7eb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.box {
-    background-color: #8f8fef;
-    max-width: 1000px;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px
-}
-
-.elem {
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.elem:first-child {
-    flex-shrink: 3;
-    flex-grow: 5;
-}
-
-/*@media screen and (max-width: 700px), not (orientation: landscape) {*/
-/*    h1 {*/
-/*        color: lightgreen;*/
+/*@media screen and (max-width: 768px) {*/
+/*    html {*/
+/*        font-size: 5px;*/
 /*    }*/
-
 /*}*/
-
-@media screen and (min-width: 576px) {
-    h1 {
-        color: blue;
-    }
-    .elem {
-        background-color: lightgreen;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    h1 {
-        color: red;
-    }
-    .elem {
-        background-color: lightcoral;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    h1 {
-        color: lightgreen;
-    }
-    .elem {
-        background-color: orange;
-    }
-}
-
-
-
-
