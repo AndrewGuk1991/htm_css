@@ -1,34 +1,44 @@
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #fffea9;
 }
 
-.parent {
-    height: 500px;
-    width: 800px;
-    background-color: #8f8fef;
-    padding: 20px;
-}
-
-.child {
-    height: 150px;
+.element {
+    height: 200px;
     width: 200px;
-    background-color: #2f40b8;
-    color: white;
-    /*transition-duration: 3s;*/
-    /*transition-delay: 2s;*/
-    /*transition-timing-function: cubic-bezier(0.775, -0.385, 0.460, 1.495);*/
-    /*transition-property: width;*/
+    background-color: #ff5959;
+    /*animation-name: square;*/
+    /*animation-duration: 5s;*/
+    /*animation-timing-function: ease-in-out;*/
+    /*animation-delay: 3s;*/
+    /*animation-iteration-count: 3;*/
+    /*animation-direction: alternate;*/
+    /*animation-fill-mode: both;*/
+    /*animation-play-state: paused;*/
 
-
+    animation: square 5s ease-in-out 3s 3 alternate both paused;
 }
 
-.child:hover {
-    width: 100%;
-    height: 250px;
-    transition: width 3s cubic-bezier(0.775, -0.385, 0.460, 1.495),
-    height 1s linear 1s;
+.element:hover {
+    animation-play-state: running;
+}
+
+
+@keyframes square {
+    0% {
+        width: 50px;
+    }
+    27%{
+        width: 300px;
+    }
+
+    50% {
+        width: 100px;
+    }
+
+    100% {
+        width: 500px;
+        background-color: lightseagreen;
+    }
 }
