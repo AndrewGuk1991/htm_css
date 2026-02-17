@@ -17,6 +17,15 @@ header {
     justify-content: space-around;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    border: 1px solid;
+    padding: 0;
+}
+
+
+
 section {
     flex-grow: 1;
 }
@@ -25,3 +34,28 @@ footer {
     height: 80px;
     background-color: #fffea9;
 }
+
+header ul a {
+    color: crimson;
+}
+
+li + li {
+    margin-left: 20px;
+}
+
+footer a {
+    color: rgba(47, 64, 184, 0.58);
+}
+
+section > h2 {
+    color: #8f8fef;
+}
+
+h2 + p {
+    color: #00ee00;
+}
+
+h2 ~ p {
+    color: red;
+}
+
