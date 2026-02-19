@@ -1,30 +1,41 @@
 
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: white;
+    background-color: lightgreen;
+}
+
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: lightgray;
-}
-
-.box {
-    width: 450px;
-    border: 5px solid white;
-    background-color: #a8a82e;
+    gap: 20px;
 }
 
 p {
-    color: red;
-    text-align: left;
-    text-transform: none;
-    /*text-indent: 2em;*/
-    line-height: 1.2;
-    word-spacing: normal;
-    letter-spacing: normal;
-    /*word-break: break-all;*/
-    hyphens: auto;
+    max-width: 70%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
-
+input {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding: 0 15px;
 }
+
+span {
+    user-select: none;
+}
+
+
+
